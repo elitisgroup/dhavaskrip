@@ -9,7 +9,7 @@ export default class Compiler {
   public compile(): string {
     this.code.split("\n").forEach((line: string): void => {
       line = line.trim();
-      
+
       if (line.startsWith("//")) return;
       if (line.startsWith("if")) this.ifStatement(line);
     });
@@ -30,7 +30,10 @@ export default class Compiler {
       elseParam1,
       elseFunc,
       elseParam2
-    ]: string[] = line.slice(2).trim().split(" ");
+    ]: string[] = line
+      .slice(2)
+      .trim()
+      .split(" ");
 
     // * This is absolute spaghetti
     this.compiled += `\nif ("${condParam1}" ${
