@@ -14,6 +14,6 @@ if (process.argv[2] === "-c" || process.argv[2] === "--compile") {
     else {
         var content = fs_1.readFileSync(process.argv[3]).toString("utf8");
         var compiler = new compiler_1["default"](content);
-        // TODO: Do something with the compiled code.
+        console.log(compiler.compile());
     }
 }
