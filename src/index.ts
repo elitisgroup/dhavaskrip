@@ -14,6 +14,6 @@ if (process.argv[2] === "-c" || process.argv[2] === "--compile") {
     const content: string = readFileSync(process.argv[3]).toString("utf8");
     const compiler: Compiler = new Compiler(content);
 
-    // TODO: Compile the code.
+    // TODO: Do something with the compiled code.
   }
 }
