@@ -1,0 +1,22 @@
+{
+  "name": "dhavaskrip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elitisgroup/dhavaskrip.git"
+  },
+  "author": "Elitis",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/elitisgroup/dhavaskrip/issues"
+  },
+  "homepage": "https://github.com/elitisgroup/dhavaskrip#readme",
+  "devDependencies": {
+    "@types/node": "^13.1.1"
+  }
+}
