@@ -9,7 +9,8 @@ export default class Compiler {
   public compile(): string {
     this.code.split("\n").forEach((line: string): void => {
       line = line.trim();
-
+      
+      if (line.startsWith("//")) return;
       if (line.startsWith("if")) this.ifStatement(line);
     });
 

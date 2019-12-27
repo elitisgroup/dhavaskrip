@@ -9,6 +9,8 @@ var Compiler = /** @class */ (function () {
         var _this = this;
         this.code.split("\n").forEach(function (line) {
             line = line.trim();
+            if (line.startsWith("//"))
+                return;
             if (line.startsWith("if"))
                 _this.ifStatement(line);
         });
